@@ -1,0 +1,16 @@
+{
+  "name": "@applicaster/everything-but-the-kitchen-sink",
+  "version": "0.2.2",
+  "description": "Everything but the kitchen sink for QB",
+  "main": "src/index.js",
+  "author": "Simon Vaucher",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.10"
+  },
+  "peerDependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.10"
+  }
+}

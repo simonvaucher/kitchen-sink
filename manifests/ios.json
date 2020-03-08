@@ -1,0 +1,69 @@
+{
+  "api": {},
+  "data": {},
+  "assets": {},
+  "general": {},
+  "styles": {
+    "fields": [
+      {
+        "group": true,
+        "label": "Cell",
+        "tooltip": "",
+        "folded": false,
+        "fields": [
+          {
+            "type": "color_picker_rgba",
+            "label": "Background color",
+            "key": "cell_background_color",
+            "initial_value": "#1D1D23"
+          },
+          {
+            "type": "color_picker_rgba",
+            "label": "Focused background color",
+            "key": "cell_background_color_focused",
+            "initial_value": "#1484FF"
+          },
+          {
+            "type": "number_input",
+            "label": "Corner radius",
+            "key": "cell_corner_radius",
+            "initial_value": "0"
+          },
+          {
+            "type": "number_input",
+            "label": "Padding bottom",
+            "key": "cell_padding_bottom",
+            "initial_value": 20
+          }
+        ]
+      }
+    ]
+  },
+  "thumbnail": {
+    "url": "data:image/png;base64,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",
+    "width": 400,
+    "height": 257
+  },
+  "name": "Everything But The Kitchen Sink",
+  "type": "cell_builder",
+  "platform": "ios",
+  "identifier": "test_everything_but_the_kitchen_sink",
+  "author_name": "Simon Vaucher",
+  "description": "Testing ground for various plugins configurations",
+  "author_email": "s.vaucher@applicaster.com",
+  "min_zapp_sdk": "1.0.0-dev",
+  "react_native": true,
+  "dependency_name": "@applicaster/everything-but-the-kitchen-sink",
+  "dependency_version": "0.1",
+  "manifest_version": "0.1",
+  "whitelisted_account_ids": [
+    "5e12fac7666333000ec0f8ab",
+    "5ae06cef8fba0f00084bd3c6",
+    "5e132c906663330008c0f8ab"
+  ],
+  "dependency_repository_url": [],
+  "deprecated_since_zapp_sdk": "",
+  "unsupported_since_zapp_sdk": "",
+  "ui_builder_support": true,
+  "targets": ["mobile"]
+}
