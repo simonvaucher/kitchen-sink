@@ -1,4 +1,5 @@
-import * as R from "ramda";
+const CELL_CONFIG_ID_PATH = ["styles", "cell_plugin_configuration_id"];
+
 /**
  * extracts the cellStyles configuration for the current cell
  */
