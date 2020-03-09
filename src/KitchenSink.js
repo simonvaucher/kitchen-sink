@@ -21,10 +21,19 @@ export function KitchenSink({ component, styles, cellStyles }) {
   const { configuration } = cellStyles[component.cell_plugin_configuration_id];
 
   const textStyle = {
-    fontFamily: R.path(["styles", "android_style", "my_font"], configuration),
-    color: R.path(["styles", "android_style", "my_color"], configuration),
+    fontFamily: R.path(
+      ["styles", "my_style_key", "android_style", "my_font"],
+      configuration
+    ),
+    color: R.path(
+      ["styles", "my_style_key", "android_style", "my_color"],
+      configuration
+    ),
     fontSize: parseInt(
-      R.path(["styles", "android_style", "my_font_size"], configuration),
+      R.path(
+        ["styles", "my_style_key", "android_style", "my_font_size"],
+        configuration
+      ),
       10
     ),
     padding: 18
@@ -33,7 +42,7 @@ export function KitchenSink({ component, styles, cellStyles }) {
   return function DrawCell({ item: { title }, state }) {
     return (
       <View style={_styles.container}>
-        <Text style={textStyle}>{title}</Text>
+        <Text style={textStyle}>Item Title</Text>
       </View>
     );
   };
