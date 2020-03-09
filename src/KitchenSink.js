@@ -26,14 +26,14 @@ const _styles = {
  */
 // $FlowFixMe
 export function KitchenSink({ component, styles, cellStyles }) {
-  const styles = extractConfiguration({ component, cellStyles });
+  const configurationStyles = extractConfiguration({ component, cellStyles });
 
   return function({ item: { title }, state }) {
     return (
       <View styles={_styles.container}>
         <Text styles={_styles.text}>{title}</Text>
         <Text styles={_styles.text}>configuration:</Text>
-        <Text styles={_styles.text}>{JSON.stringify(styles)}</Text>
+        <Text styles={_styles.text}>{JSON.stringify(configurationStyles)}</Text>
       </View>
     );
   };
