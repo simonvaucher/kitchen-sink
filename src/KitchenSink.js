@@ -1,8 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-import { extractConfiguration } from "./utils";
-
 const _styles = {
   container: {
     flex: 1,
@@ -19,12 +17,10 @@ const _styles = {
 };
 
 export function KitchenSink({ component, styles, cellStyles }) {
-  const cellStylesConfig = extractConfiguration({ component, cellStyles });
-
   return function DrawCell({ item: { title }, state }) {
     return (
       <View styles={_styles.container}>
-        <Text styles={_styles.text}>{JSON.stringify(cellStylesConfig)}</Text>
+        <Text styles={_styles.text}>{JSON.stringify(cellStyles)}</Text>
       </View>
     );
   };
