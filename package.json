@@ -1,6 +1,6 @@
 {
   "name": "@applicaster/everything-but-the-kitchen-sink",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Everything but the kitchen sink for QB",
   "main": "src/index.js",
   "author": "Simon Vaucher",
