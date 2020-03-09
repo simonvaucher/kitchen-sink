@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
+import * as R from "ramda";
 
 const _styles = {
   container: {
@@ -7,7 +8,7 @@ const _styles = {
     alignItems: "flex-start",
     justifyContent: "center",
     overflow: "visible",
-    backgroundColor: "rgba(185,185,185,1.0)",
+    backgroundColor: "rgba(222,222,222,1.0)",
     margin: 20,
     padding: 8
   },
@@ -17,10 +18,22 @@ const _styles = {
 };
 
 export function KitchenSink({ component, styles, cellStyles }) {
+  const { configuration } = cellStyles[component.cell_plugin_configuration_id];
+
+  const textStyle = {
+    fontFamily: R.path(["styles", "android_style", "my_font"], configuration),
+    color: R.path(["styles", "android_style", "my_color"], configuration),
+    fontSize: R.path(
+      ["styles", "android_style", "my_font_size"],
+      configuration
+    ),
+    padding: 18
+  };
+
   return function DrawCell({ item: { title }, state }) {
     return (
-      <View styles={_styles.container}>
-        <Text styles={_styles.text}>{JSON.stringify(cellStyles)}</Text>
+      <View style={_styles.container}>
+        <Text style={_styles.text}>{title}</Text>
       </View>
     );
   };
