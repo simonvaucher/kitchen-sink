@@ -17,17 +17,46 @@
               "fields": [
                 {
                   "type": "ios_font_selector",
-                  "key": "my_font"
+                  "label": "font family 🐧",
+                  "key": "font_family"
                 },
                 {
                   "type": "number_input",
-                  "key": "my_font_size",
-                  "initial_value": 16
+                  "label": "font size",
+                  "key": "font_size",
+                  "initial_value": 24
                 },
                 {
                   "type": "color_picker_rgba",
-                  "key": "my_color",
-                  "initial_value": "rgba(1,2,3,1.0)"
+                  "label": "color 🍭",
+                  "key": "font_color",
+                  "initial_value": "rgba(50,50,50,1.0)"
+                },
+                {
+                  "type": "number_input",
+                  "label": "line height",
+                  "key": "line_height",
+                  "initial_value": 30
+                },
+                {
+                  "type": "select",
+                  "label": "weight 😋",
+                  "key": "font_weight",
+                  "options": [
+                    {
+                      "normal": "normal",
+                      "bold": "bold",
+                      "100": "100",
+                      "200": "200",
+                      "300": "300",
+                      "400": "400",
+                      "500": "500",
+                      "600": "600",
+                      "700": "700",
+                      "800": "800"
+                    }
+                  ],
+                  "initial_value": "normal"
                 }
               ]
             },
@@ -37,22 +66,46 @@
               "fields": [
                 {
                   "type": "android_font_selector",
-                  "key": "my_font"
+                  "label": "font family 🐧",
+                  "key": "font_family"
                 },
                 {
                   "type": "number_input",
-                  "key": "my_font_size",
-                  "initial_value": 20
+                  "label": "font size",
+                  "key": "font_size",
+                  "initial_value": 22
                 },
                 {
                   "type": "color_picker_rgba",
-                  "key": "my_color",
-                  "initial_value": "rgba(255,0,0,0.5)"
+                  "label": "color 🍭",
+                  "key": "font_color",
+                  "initial_value": "rgba(5,5,5,1.0)"
                 },
                 {
-                  "type": "uploader",
-                  "key": "auto_refresh_image_url",
-                  "label": "Auto Refresh Button"
+                  "type": "number_input",
+                  "label": "line height",
+                  "key": "line_height",
+                  "initial_value": 26
+                },
+                {
+                  "type": "select",
+                  "label": "weight 🗜",
+                  "key": "font_weight",
+                  "options": [
+                    {
+                      "normal": "normal",
+                      "bold": "bold",
+                      "100": "100",
+                      "200": "200",
+                      "300": "300",
+                      "400": "400",
+                      "500": "500",
+                      "600": "600",
+                      "700": "700",
+                      "800": "800"
+                    }
+                  ],
+                  "initial_value": "normal"
                 }
               ]
             }
@@ -73,11 +126,11 @@
   "author_name": "Simon Vaucher",
   "description": "Testing ground for various plugins configurations",
   "author_email": "s.vaucher@applicaster.com",
-  "min_zapp_sdk": "1.0.0-dev",
+  "min_zapp_sdk": "",
   "react_native": true,
   "dependency_name": "@applicaster/everything-but-the-kitchen-sink",
-  "dependency_version": "0.1.9",
-  "manifest_version": "0.1.9",
+  "dependency_version": "0.2.0",
+  "manifest_version": "0.2.0",
   "whitelisted_account_ids": [
     "5e12fac7666333000ec0f8ab",
     "5ae06cef8fba0f00084bd3c6",
