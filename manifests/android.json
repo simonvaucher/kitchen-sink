@@ -7,8 +7,8 @@
     "fields": [
       {
         "type": "text_style",
-        "key": "my_style_key",
-        "label": "Modify text style",
+        "key": "title_text_style",
+        "label": "Title",
         "form_configuration": {
           "sections": [
             {
@@ -44,16 +44,44 @@
                   "key": "font_weight",
                   "options": [
                     {
-                      "normal": "normal",
-                      "bold": "bold",
-                      "100": "100",
-                      "200": "200",
-                      "300": "300",
-                      "400": "400",
-                      "500": "500",
-                      "600": "600",
-                      "700": "700",
-                      "800": "800"
+                      "text": "normal",
+                      "value": "normal"
+                    },
+                    {
+                      "text": "bold",
+                      "value": "bold"
+                    },
+                    {
+                      "text": "100",
+                      "value": "100"
+                    },
+                    {
+                      "text": "200",
+                      "value": "200"
+                    },
+                    {
+                      "text": "300",
+                      "value": "300"
+                    },
+                    {
+                      "text": "400",
+                      "value": "400"
+                    },
+                    {
+                      "text": "500",
+                      "value": "500"
+                    },
+                    {
+                      "text": "600",
+                      "value": "600"
+                    },
+                    {
+                      "text": "700",
+                      "value": "700"
+                    },
+                    {
+                      "text": "800",
+                      "value": "800"
                     }
                   ],
                   "initial_value": "normal"
@@ -89,20 +117,211 @@
                 },
                 {
                   "type": "select",
-                  "label": "weight 🗜",
+                  "label": "weight 😋",
                   "key": "font_weight",
                   "options": [
                     {
-                      "normal": "normal",
-                      "bold": "bold",
-                      "100": "100",
-                      "200": "200",
-                      "300": "300",
-                      "400": "400",
-                      "500": "500",
-                      "600": "600",
-                      "700": "700",
-                      "800": "800"
+                      "text": "normal",
+                      "value": "normal"
+                    },
+                    {
+                      "text": "bold",
+                      "value": "bold"
+                    },
+                    {
+                      "text": "100",
+                      "value": "100"
+                    },
+                    {
+                      "text": "200",
+                      "value": "200"
+                    },
+                    {
+                      "text": "300",
+                      "value": "300"
+                    },
+                    {
+                      "text": "400",
+                      "value": "400"
+                    },
+                    {
+                      "text": "500",
+                      "value": "500"
+                    },
+                    {
+                      "text": "600",
+                      "value": "600"
+                    },
+                    {
+                      "text": "700",
+                      "value": "700"
+                    },
+                    {
+                      "text": "800",
+                      "value": "800"
+                    }
+                  ],
+                  "initial_value": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "text_style",
+        "key": "subtitle_text_style",
+        "label": "SubTitle",
+        "form_configuration": {
+          "sections": [
+            {
+              "label": "iOS style section",
+              "key": "ios_style",
+              "fields": [
+                {
+                  "type": "ios_font_selector",
+                  "label": "font family 🐧",
+                  "key": "font_family"
+                },
+                {
+                  "type": "number_input",
+                  "label": "font size",
+                  "key": "font_size",
+                  "initial_value": 24
+                },
+                {
+                  "type": "color_picker_rgba",
+                  "label": "color 🍭",
+                  "key": "font_color",
+                  "initial_value": "rgba(50,50,50,1.0)"
+                },
+                {
+                  "type": "number_input",
+                  "label": "line height",
+                  "key": "line_height",
+                  "initial_value": 30
+                },
+                {
+                  "type": "select",
+                  "label": "weight 😋",
+                  "key": "font_weight",
+                  "options": [
+                    {
+                      "text": "normal",
+                      "value": "normal"
+                    },
+                    {
+                      "text": "bold",
+                      "value": "bold"
+                    },
+                    {
+                      "text": "100",
+                      "value": "100"
+                    },
+                    {
+                      "text": "200",
+                      "value": "200"
+                    },
+                    {
+                      "text": "300",
+                      "value": "300"
+                    },
+                    {
+                      "text": "400",
+                      "value": "400"
+                    },
+                    {
+                      "text": "500",
+                      "value": "500"
+                    },
+                    {
+                      "text": "600",
+                      "value": "600"
+                    },
+                    {
+                      "text": "700",
+                      "value": "700"
+                    },
+                    {
+                      "text": "800",
+                      "value": "800"
+                    }
+                  ],
+                  "initial_value": "normal"
+                }
+              ]
+            },
+            {
+              "label": "Android style section",
+              "key": "android_style",
+              "fields": [
+                {
+                  "type": "android_font_selector",
+                  "label": "font family 🐧",
+                  "key": "font_family"
+                },
+                {
+                  "type": "number_input",
+                  "label": "font size",
+                  "key": "font_size",
+                  "initial_value": 22
+                },
+                {
+                  "type": "color_picker_rgba",
+                  "label": "color 🍭",
+                  "key": "font_color",
+                  "initial_value": "rgba(5,5,5,1.0)"
+                },
+                {
+                  "type": "number_input",
+                  "label": "line height",
+                  "key": "line_height",
+                  "initial_value": 26
+                },
+                {
+                  "type": "select",
+                  "label": "weight 😋",
+                  "key": "font_weight",
+                  "options": [
+                    {
+                      "text": "normal",
+                      "value": "normal"
+                    },
+                    {
+                      "text": "bold",
+                      "value": "bold"
+                    },
+                    {
+                      "text": "100",
+                      "value": "100"
+                    },
+                    {
+                      "text": "200",
+                      "value": "200"
+                    },
+                    {
+                      "text": "300",
+                      "value": "300"
+                    },
+                    {
+                      "text": "400",
+                      "value": "400"
+                    },
+                    {
+                      "text": "500",
+                      "value": "500"
+                    },
+                    {
+                      "text": "600",
+                      "value": "600"
+                    },
+                    {
+                      "text": "700",
+                      "value": "700"
+                    },
+                    {
+                      "text": "800",
+                      "value": "800"
                     }
                   ],
                   "initial_value": "normal"
