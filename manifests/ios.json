@@ -348,8 +348,8 @@
   "min_zapp_sdk": "",
   "react_native": true,
   "dependency_name": "@applicaster/everything-but-the-kitchen-sink",
-  "dependency_version": "0.2.0",
-  "manifest_version": "0.2.0",
+  "dependency_version": "0.3.0",
+  "manifest_version": "0.3.0",
   "whitelisted_account_ids": [
     "5e12fac7666333000ec0f8ab",
     "5ae06cef8fba0f00084bd3c6",
